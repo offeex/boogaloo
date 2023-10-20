@@ -23,5 +23,5 @@ You must have [pnpm](https://pnpm.io/) globally installed
 1. Clone the repo
 2. install all dependencies with `pnpm i`
 3. Create *db* folder and add *main.db* file in repo's root (eg. *boogaloo/db/main.db*)
-4. run `drizzle-kit push:sqlite` to initialize db
-5. `vite dev` to run app
+4. run `pnpm drizzle-kit push:sqlite` to initialize db
+5. `pnpm run vite dev` to run app
