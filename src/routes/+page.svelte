@@ -45,10 +45,10 @@
 	</div>
 
 	{#if form}
-		<div class='failure-text'>{form.message}</div>
+		<div class="failure-text">{form.message}</div>
 	{/if}
 
-	<div class='input'>
+	<div class="input">
 		<InputForm
 			id="username"
 			type="text"
@@ -58,7 +58,7 @@
 			maxlength={64}
 		/>
 	</div>
-	<div class='input'>
+	<div class="input">
 		<InputForm
 			id="password"
 			type="password"
@@ -67,10 +67,10 @@
 		/>
 	</div>
 	{#if authState === 'register'}
-		<div class='input'>
+		<div class="input">
 			<InputForm
 				id="confirmPassword"
-				name='Confirm password'
+				name="Confirm password"
 				type="password"
 				label
 				placeholder="Confirm new password"
@@ -79,7 +79,7 @@
 	{/if}
 
 	<div class="buttons">
-		<Button label="Continue" style='accent'/>
+		<Button label="Continue" style="accent" />
 	</div>
 </form>
 
@@ -99,7 +99,7 @@
 	}
 
 	.input {
-    width: 100%;
+		width: 100%;
 	}
 
 	.header {

@@ -18,10 +18,10 @@
 		align-items: center;
 		justify-content: space-between;
 
-    h3 {
-      color: colors.$accent;
-      font-weight: bold;
-    }
+		h3 {
+			color: colors.$accent;
+			font-weight: bold;
+		}
 	}
 
 	pre {

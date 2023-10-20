@@ -21,13 +21,7 @@
 		class="form"
 		id="usr"
 	/>
-	<form
-		method="post"
-		action="?/logout"
-		use:enhance
-		class="form"
-		id="logout"
-	/>
+	<form method="post" action="?/logout" use:enhance class="form" id="logout" />
 
 	<span>Hello, {data.username}</span>
 	<div class="username-input">

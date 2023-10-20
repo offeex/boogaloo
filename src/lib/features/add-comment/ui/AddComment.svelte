@@ -40,7 +40,7 @@
 </script>
 
 <form method="post" {action} on:submit|preventDefault={submitComment}>
-	<InputField {placeholder} id="content" minlength={3}/>
+	<InputField {placeholder} id="content" minlength={3} />
 	<div>
 		<Button {label} {style} />
 	</div>

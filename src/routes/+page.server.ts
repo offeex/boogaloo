@@ -54,7 +54,7 @@ export const actions: Actions = {
 			const key = await auth.useKey(
 				'username',
 				username.toLowerCase(),
-				password,
+				password
 			)
 			const session = await auth.createSession({
 				userId: key.userId,

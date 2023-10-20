@@ -6,18 +6,18 @@
 </script>
 
 <form method="post" action="?/createPost" use:enhance>
-	<InputField placeholder="Title" id="title" minlength={3}/>
+	<InputField placeholder="Title" id="title" minlength={3} />
 	<TextArea id="content" cols={1} rows={10} />
 	<Button label="Post" />
 </form>
 
 <style lang="scss">
-  @use '@/ui/styles/colors';
+	@use '@/ui/styles/colors';
 
 	form {
 		display: flex;
 		flex-direction: column;
 		gap: 8px;
-    width: 100%;
+		width: 100%;
 	}
 </style>

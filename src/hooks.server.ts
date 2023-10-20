@@ -7,7 +7,7 @@ export const handle: Handle = async ({ event, resolve }) => {
 	event.locals.auth = auth.handleRequest(event)
 	const session = await event.locals.auth.validate()
 
-	if (event.route.id !== "/" && !session) {
+	if (event.route.id !== '/' && !session) {
 		throw redirect(302, '/')
 	} else if (event.route.id !== '/blog' && session) {
 		throw redirect(302, '/blog')
