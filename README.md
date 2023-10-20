@@ -1,18 +1,15 @@
 # Boogaloo
 
 ## Overview
-
 SvelteKit-powered Full-stack blog application.
 
-It utilizies:
-
+It utilizies: 
 - **[SQLite](https://www.sqlite.org/index.html)** for database
 - **[DrizzleORM](https://github.com/drizzle-team/drizzle-orm)** for ORM
 - **[Lucia-Auth](https://github.com/lucia-auth/lucia)** for authentication
 - **[TypeScript](https://github.com/microsoft/TypeScript)** for type safety
 
 It features:
-
 - Authentication (register/login/logout)
 - Post creation (title, content)
 - Comments and replies
@@ -20,7 +17,11 @@ It features:
 
 ## Quick Start
 
+### Prerequisites
+You must have [pnpm](https://pnpm.io/) globally installed
+
 1. Clone the repo
-2. Create _db_ folder and add _main.db_ file in repo's root (eg. _boogaloo/db/main.db_)
-3. run `drizzle-kit push:sqlite` to initialize db
-4. `vite dev` to run app
+2. install all dependencies with `pnpm i`
+3. Create *db* folder and add *main.db* file in repo's root (eg. *boogaloo/db/main.db*)
+4. run `drizzle-kit push:sqlite` to initialize db
+5. `vite dev` to run app
