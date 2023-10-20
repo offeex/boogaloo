@@ -22,7 +22,6 @@
 		data.append('postId', postId.toString())
 		if (replyToId) {
 			data.append('replyToId', replyToId)
-			console.log("tualet", replyToId)
 		}
 
 		event.currentTarget.reset()

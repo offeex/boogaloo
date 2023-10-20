@@ -27,7 +27,7 @@
 />
 
 <style lang="scss">
-	@use './styles/colors';
+	@use '@/ui/styles/colors';
 
 	label {
 		display: inline-block;

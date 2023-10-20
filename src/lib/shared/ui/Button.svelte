@@ -10,7 +10,7 @@
 </button>
 
 <style lang="scss">
-	@use './styles/colors';
+	@use '@/ui/styles/colors';
 
 	.accent {
 		position: relative;

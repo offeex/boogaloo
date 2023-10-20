@@ -5,6 +5,7 @@
 	import type { PageData } from './$types'
 	import PostBlock from '$lib/widgets/ui/PostBlock.svelte'
 	import type { Post as PostType } from '$lib/entities'
+	import CreatePost from '$lib/features/create-post/ui/CreatePost.svelte'
 
 	export let data: PageData
 	export let form
@@ -47,7 +48,8 @@
 </header>
 
 <main>
-	{#each data.posts as post}
+	<CreatePost />
+	{#each data.posts.reverse() as post}
 		<PostBlock post={transformPost(post)} />
 	{/each}
 </main>
@@ -79,10 +81,10 @@
 		justify-content: start;
 		align-items: center;
 		gap: 20px;
+		overflow-x: hidden;
 
 		margin-bottom: 20px;
 		padding: 14px 0;
-		width: 100%;
 
 		background-color: colors.$secondary;
 

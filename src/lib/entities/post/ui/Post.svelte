@@ -1,16 +1,30 @@
 <script lang="ts">
 	export let title: string
 	export let content: string
+	export let author: string
 </script>
 
-<h3>{title}</h3>
-<p>{content}</p>
+<div>
+	<h3>{title}</h3>
+	<h5>@{author}</h5>
+</div>
+<pre>{content}</pre>
 
 <style lang="scss">
 	@use '@/ui/styles/colors';
 
-	h3 {
-		color: colors.$accent;
-		font-weight: bold;
+	div {
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+
+    h3 {
+      color: colors.$accent;
+      font-weight: bold;
+    }
+	}
+
+	pre {
+		white-space: pre-wrap;
 	}
 </style>

@@ -8,7 +8,7 @@
 </script>
 
 <div class="container">
-	<Post title={post.title} content={post.content} />
+	<Post title={post.title} content={post.content} author={post.author.username}/>
 	<AddComment postId={post.id}/>
 
 	{#each post.comments as comment}
