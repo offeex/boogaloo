@@ -1,0 +1,42 @@
+@use '../shared/ui/styles/colors';
+@import url('https://fonts.googleapis.com/css?family=JetBrains+Mono&display=swap');
+
+body {
+	background-color: colors.$background;
+	margin: 0;
+	padding: 0;
+}
+
+* {
+	color: colors.$text;
+	font-family: 'JetBrains Mono', serif;
+}
+
+h2 {
+	font-size: 24px;
+}
+
+h3 {
+	font-size: 20px;
+}
+
+h4 {
+	font-size: 18px;
+}
+
+h5 {
+	font-size: 16px;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+	font-weight: 500;
+	margin: 0;
+}
+
+:not(h1, h2, h3, h4, h5) {
+	font-size: 14px;
+}
